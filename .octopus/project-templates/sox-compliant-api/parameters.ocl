@@ -21,3 +21,43 @@ parameter "ProdEnvironment" {
     help_text = ""
     label = "Production Environment"
 }
+
+parameter "Docker Account" {
+    display_settings = {
+        Octopus.ControlType = "UsernamePasswordAccount"
+    }
+    help_text = ""
+    label = ""
+}
+
+parameter "SBOM Package" {
+    display_settings = {
+        Octopus.ControlType = "Package"
+    }
+    help_text = ""
+    label = ""
+}
+
+parameter "GitHub Auth Token" {
+    display_settings = {
+        Octopus.ControlType = "Sensitive"
+    }
+    help_text = ""
+    label = ""
+}
+
+parameter "Worker Pool" {
+    display_settings = {
+        Octopus.ControlType = "WorkerPool"
+    }
+    help_text = ""
+    label = ""
+}
+
+parameter "Container Feed" {
+    display_settings = {
+        Octopus.ControlType = "Feed"
+    }
+    help_text = ""
+    label = ""
+}
