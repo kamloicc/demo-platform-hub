@@ -1,0 +1,8 @@
+name = "SOX Compliant API"
+description = "Standardized API deployment with artifact attestation verification."
+lifecycle = "default"
+
+icon {
+    color = "#757575"
+    id = "layer-group"
+}
