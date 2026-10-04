@@ -2,4 +2,28 @@ process_template "run-a-process-template" {
     name = "Run a Process Template"
     process_template_slug = "github-verify-attestations-docker"
     version_mask = "2.X"
+
+    parameter "Template.Docker.Account" {
+        value = "#{Docker Account}"
+    }
+
+    parameter "Template.SBOM.Artifact" {
+        value = "SBOM Package"
+    }
+
+    parameter "Template.Verify.WorkerPool" {
+        value = "#{Worker Pool}"
+    }
+
+    parameter "Template.Verify.ExecutionContainerFeed" {
+        value = "#{Container Feed}"
+    }
+
+    parameter "Template.Production" {
+        value = "#{ProdEnvironment}"
+    }
+
+    parameter "Template.Git.AuthToken" {
+        value = "#{GitHub Auth Token}"
+    }
 }
